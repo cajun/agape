@@ -2,6 +2,12 @@ base: &base
  database_prefix: agape
  database_suffix: _<%= RAILS_ENV %>
 
+
+production:
+  host: localhost
+  port: 5984
+  <<: *base
+
 development:
   host: localhost
   port: 5984
