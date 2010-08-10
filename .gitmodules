@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/couchrest_rails"]
+	path = vendor/plugins/couchrest_rails
+	url = git@github.com:cajun/couchrest-rails.git
