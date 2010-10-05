@@ -2,6 +2,6 @@
 
 # Your secret key for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
-# Make sure the secret is at least 30 characters and all random, 
+# Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-ActionController::Base.cookie_verifier_secret = 'b42646c9435b57e9090513c7c31db43aac3d49a55b6ce4ac1b1e6d8c950fa6b4a7c0738542d7f263f96351afadfc5c4010bb16ffeb16a578b025631185545836';
+Agape::Application.config.secret_token = 'f8ee5e8e973af932b49c90ac56e07ff96d757550cb920042a5d9929da78611587e6a3a8c6b2751afacb3a2cda6f2cf5b5d9c800b5bfbecc143e283276927d7f5'
