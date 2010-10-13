@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @student.first_name
+%p
+  %b Middle name:
+  = @student.middle_name
+%p
+  %b Last name:
+  = @student.last_name
+%p
+  %b Date of birth:
+  = @student.date_of_birth
+%p
+  %b Number:
+  = @student.number
+
+= link_to 'Edit', edit_student_path(@student)
+\|
+= link_to 'Back', students_path

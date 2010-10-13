@@ -1,0 +1,27 @@
+%h1 Listing students
+
+%table
+  %tr
+    %th First name
+    %th Middle name
+    %th Last name
+    %th Date of birth
+    %th Number
+    %th
+    %th
+    %th
+
+  - @students.each do |student|
+    %tr
+      %td= student.first_name
+      %td= student.middle_name
+      %td= student.last_name
+      %td= student.date_of_birth
+      %td= student.number
+      %td= link_to 'Show', student
+      %td= link_to 'Edit', edit_student_path(student)
+      %td= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Student', new_student_path

@@ -32,4 +32,6 @@ Agape::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  config.gem 'shoulda', :lib => 'shoulda'
 end
